@@ -32,10 +32,10 @@ No existe información suficiente para determinar una causa raíz única y se pr
 
 | Indicador                             |  Estado |
 | :------------------------------------ | :-----: |
-| Avance del diagnóstico                | **35%** |
-| Evidencia objetiva recopilada         | **60%** |
-| Hipótesis principales evaluadas       | **40%** |
-| Confianza en el próximo paso          | **75%** |
+| Avance del diagnóstico                | **45%** |
+| Evidencia objetiva recopilada         | **70%** |
+| Hipótesis principales evaluadas       | **55%** |
+| Confianza en el próximo paso          | **80%** |
 | Riesgo de comprar piezas innecesarias | 🔴 Alto |
 
 ---
@@ -44,13 +44,17 @@ No existe información suficiente para determinar una causa raíz única y se pr
 
 Actualmente las principales líneas de investigación son:
 
-🟡 Sistema Valvetronic.
-
-🟡 Estrategia de funcionamiento VANOS.
+🟡 Estrategia VANOS.
 
 🟡 Presión de aceite del motor.
 
-El objetivo inmediato es reducir estas líneas de investigación mediante pruebas objetivas.
+⚪ Sistema Valvetronic (suspendido).
+
+Durante las últimas pruebas el sistema Valvetronic respondió a comandos, completó el aprendizaje sin errores y mostró coherencia entre posición objetivo y posición real.
+
+La evidencia actual reduce significativamente la probabilidad de que el Valvetronic sea la causa principal de la falla, aunque no existe validación en ralentí estable debido a que el motor continúa apagándose después de aproximadamente un segundo.
+
+El objetivo inmediato es reducir las hipótesis restantes mediante nuevas mediciones objetivas.
 
 ---
 
@@ -58,7 +62,7 @@ El objetivo inmediato es reducir estas líneas de investigación mediante prueba
 
 El proyecto se encuentra avanzando de forma estructurada.
 
-Se dispone de evidencia suficiente para descartar parcialmente algunas causas probables, pero aún existen múltiples hipótesis compatibles con la falla principal.
+Se dispone de evidencia objetiva que permite disminuir la prioridad de la hipótesis Valvetronic y concentrar el esfuerzo de diagnóstico en las líneas de investigación que permanecen activas.
 
 La prioridad actual es aumentar la calidad de la evidencia antes de tomar decisiones técnicas importantes.
 
@@ -66,7 +70,7 @@ La prioridad actual es aumentar la calidad de la evidencia antes de tomar decisi
 
 # 📌 Próximo Objetivo
 
-Obtener información que permita reducir el número de hipótesis activas y aumentar la confianza del diagnóstico.
+Obtener información que permita confirmar o debilitar las hipótesis relacionadas con VANOS y presión de aceite.
 
 ---
 
@@ -76,7 +80,9 @@ Obtener información que permita reducir el número de hipótesis activas y aume
 
 🔴 Comprar nuevos componentes.
 
-🔴 Descartar hipótesis sin evidencia objetiva.
+🔴 Reactivar hipótesis suspendidas sin evidencia objetiva nueva.
+
+🔴 Descartar hipótesis activas sin evidencia objetiva.
 
 🔴 Realizar múltiples modificaciones simultáneamente.
 
@@ -100,7 +106,7 @@ Obtener información que permita reducir el número de hipótesis activas y aume
 | :------------------------------------------------------------ | :---------: |
 | Organización del proyecto                                     |   🟢 Alta   |
 | Calidad de la documentación                                   |   🟢 Alta   |
-| Cantidad de evidencia disponible                              |   🟡 Media  |
+| Cantidad de evidencia disponible                              |   🟢 Media-Alta |
 | Dirección del diagnóstico                                     | 🟢 Correcta |
 | Probabilidad de que la próxima sesión aporte información útil |   🟢 Alta   |
 
@@ -110,5 +116,6 @@ Obtener información que permita reducir el número de hipótesis activas y aume
 
 El proyecto mantiene una metodología de diagnóstico consistente y basada en evidencia.
 
-Aunque la causa raíz aún no ha sido determinada, la información recopilada permite reducir progresivamente la incertidumbre y orientar las próximas acciones hacia pruebas de mayor impacto técnico.
+Las pruebas recientes permiten reducir significativamente la incertidumbre asociada al sistema Valvetronic y concentrar el análisis en las hipótesis que actualmente presentan menor nivel de validación.
 
+La causa raíz aún no ha sido determinada, pero el proyecto avanza hacia un conjunto más reducido y mejor sustentado de posibilidades técnicas.
