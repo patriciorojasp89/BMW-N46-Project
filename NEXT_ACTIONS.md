@@ -14,9 +14,11 @@
 
 # 🚦 Estrategia Actual
 
-La prioridad del proyecto es obtener evidencia objetiva que permita reducir las hipótesis activas.
+La prioridad actual es determinar por qué el DME mantiene el VANOS de admisión con posición y setpoint fijos durante todo el ciclo de arranque.
 
-Actualmente se recomienda priorizar pruebas y mediciones antes del reemplazo de componentes.
+La evidencia disponible indica que el sistema Valvetronic funciona de manera coherente bajo las condiciones de prueba actuales y que el intercambio de solenoides VANOS no modificó el comportamiento observado.
+
+Actualmente se recomienda priorizar mediciones relacionadas con activación, sincronización y condiciones de habilitación del control VANOS antes de considerar reemplazo de componentes.
 
 ---
 
@@ -24,7 +26,48 @@ Actualmente se recomienda priorizar pruebas y mediciones antes del reemplazo de 
 
 ## Objetivo
 
-Obtener evidencia que permita reducir las principales líneas de investigación activas.
+Determinar si el control del VANOS de admisión está habilitado, inhibido o bloqueado por alguna condición previa.
+
+---
+
+## Mediciones prioritarias
+
+* VANOS status.
+* VANOS enable.
+* VANOS activation inlet.
+* Synchronization status.
+* Crankshaft/Camshaft correlation.
+* VANOS adaptation status.
+
+---
+
+## Impacto esperado
+
+🟢 Muy alto.
+
+---
+
+## Resultado esperado
+
+Responder la pregunta principal actual:
+
+¿Por qué el DME mantiene el VANOS de admisión con setpoint fijo en 120?
+
+---
+
+# 🥈 Prioridad 2
+
+## Objetivo
+
+Determinar si el motor alcanza a abandonar la estrategia de arranque antes de apagarse.
+
+---
+
+## Evidencia buscada
+
+* Estados de arranque.
+* Estados de ralentí.
+* Condiciones de transición entre arranque y funcionamiento normal.
 
 ---
 
@@ -34,65 +77,9 @@ Obtener evidencia que permita reducir las principales líneas de investigación 
 
 ---
 
-## Costo
-
-🟢 Bajo.
-
----
-
-## Tiempo estimado
-
-30 a 60 minutos.
-
----
-
-## Riesgo
-
-🟢 Bajo.
-
----
-
 ## Resultado esperado
 
-Reducir la incertidumbre del diagnóstico y aumentar la confianza en las siguientes decisiones técnicas.
-
----
-
-# 🥈 Prioridad 2
-
-## Objetivo
-
-Verificar sistemas relacionados con las hipótesis activas utilizando las herramientas disponibles.
-
----
-
-## Impacto esperado
-
-🟡 Medio.
-
----
-
-## Costo
-
-🟢 Bajo.
-
----
-
-## Tiempo estimado
-
-30 minutos.
-
----
-
-## Riesgo
-
-🟢 Bajo.
-
----
-
-## Resultado esperado
-
-Obtener nueva evidencia objetiva para apoyar o debilitar las líneas de investigación actuales.
+Confirmar si el VANOS de admisión permanece fijo porque el motor nunca alcanza la fase de control normal.
 
 ---
 
@@ -100,94 +87,53 @@ Obtener nueva evidencia objetiva para apoyar o debilitar las líneas de investig
 
 ## Objetivo
 
-Revisar información obtenida durante sesiones anteriores y buscar relaciones entre los distintos resultados.
+Continuar recopilando evidencia sobre sincronización y comportamiento dinámico de árboles de levas.
 
 ---
 
-## Impacto esperado
+## Evidencia buscada
 
-🟡 Medio.
-
----
-
-## Costo
-
-🟢 Muy bajo.
-
----
-
-## Tiempo estimado
-
-15 a 30 minutos.
-
----
-
-## Riesgo
-
-🟢 Muy bajo.
+* Camshaft position inlet.
+* Camshaft position exhaust.
+* VANOS inlet actual.
+* VANOS inlet setpoint.
+* VANOS exhaust actual.
+* VANOS exhaust setpoint.
 
 ---
 
 ## Resultado esperado
 
-Identificar patrones o inconsistencias que puedan orientar futuras pruebas.
+Detectar inconsistencias o patrones repetitivos que permitan reducir aún más las hipótesis activas.
 
 ---
 
 # 🚫 Acciones No Recomendadas
 
-Actualmente no se recomienda:
+🔴 Comprar componentes por sospecha.
 
-🔴 Reemplazar componentes sin evidencia objetiva.
+🔴 Sustituir solenoides VANOS únicamente por precaución.
 
-🔴 Realizar múltiples modificaciones simultáneamente.
+🔴 Reactivar hipótesis Valvetronic sin evidencia nueva.
 
-🔴 Descartar líneas de investigación sin datos verificables.
-
-🔴 Comprar piezas únicamente por sospecha.
+🔴 Realizar múltiples cambios simultáneamente.
 
 ---
 
-# ⏱ Según el tiempo disponible
+# 📌 Observaciones importantes
 
-## Sesión corta
+Hechos actualmente respaldados por evidencia:
 
-15 a 30 minutos.
-
-Revisar información, realizar verificaciones simples o documentar avances.
-
----
-
-## Sesión media
-
-30 a 60 minutos.
-
-Realizar una prueba o medición importante.
-
----
-
-## Sesión larga
-
-1 a 3 horas.
-
-Ejecutar procedimientos más complejos o varias pruebas relacionadas con un mismo objetivo.
-
----
-
-# 🧠 Criterio de decisión
-
-La siguiente acción del proyecto siempre debe buscar maximizar:
-
-* Información obtenida.
-* Reducción de incertidumbre.
-* Bajo costo.
-* Bajo riesgo.
-* Facilidad de ejecución.
+* El Valvetronic responde a comandos y completó adaptación sin errores.
+* El VANOS de admisión mantiene posición real y setpoint en 120 durante el arranque.
+* El VANOS de escape sí muestra variación.
+* El intercambio de solenoides VANOS no modificó el comportamiento observado.
+* El cambio de aceite realizado no confirma presión hidráulica correcta.
 
 ---
 
 # 🎖 Objetivo General
 
-Cada sesión de trabajo debe aportar información útil al proyecto, independientemente de si el vehículo queda reparado o no.
+Cada sesión de trabajo debe buscar reducir la incertidumbre del diagnóstico mediante evidencia objetiva.
 
-Una sesión exitosa es aquella que reduce la incertidumbre del diagnóstico y mejora la comprensión del problema.
+La prioridad actual no es encontrar una pieza defectuosa, sino comprender por qué el DME mantiene el control del VANOS de admisión en las condiciones observadas.
