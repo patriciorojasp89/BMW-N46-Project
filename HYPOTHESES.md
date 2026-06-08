@@ -34,26 +34,37 @@
 
 Estado:
 
-🟡 Activa
+⚪ Suspendida
 
 Prioridad:
 
-Alta
+Baja
 
 Observaciones relevantes:
 
-* Existen antecedentes de intervención en el sistema.
-* El comportamiento del motor es compatible con una falla de control de alzada.
-* Aún existen aspectos pendientes de verificar.
+* Se ejecutaron pruebas mediante Tool32 durante el arranque y posterior al intento de arranque.
+* Los valores de posición objetivo y posición real mostraron una diferencia aproximada de 0.39°.
+* El motor Valvetronic respondió a comandos directos del DME.
+* La rutina de aprendizaje/adaptación finalizó sin errores.
+* El sistema demuestra conocimiento de topes mínimo y máximo.
+* No se dispone de observación en ralentí estable debido a que el motor continúa apagándose después de aproximadamente un segundo.
+
+Interpretación actual:
+
+La evidencia disponible debilita significativamente la hipótesis de una falla principal en el motor Valvetronic, sensor excéntrico o proceso de adaptación.
+
+El sistema presenta un comportamiento compatible con funcionamiento normal bajo las condiciones de prueba disponibles.
 
 Qué falta demostrar:
 
-* Confirmar el correcto funcionamiento del sistema bajo condiciones reales de operación.
-* Obtener mayor evidencia objetiva.
+* Comportamiento del sistema durante ralentí estable.
+* Verificación adicional únicamente si aparecen nuevos síntomas o evidencia contradictoria.
 
-Próximo paso relacionado:
+Conclusión actual:
 
-Consultar NEXT_ACTIONS.md.
+El sistema Valvetronic no se considera actualmente la causa principal más probable de la falla.
+
+La hipótesis permanece documentada pero suspendida hasta la aparición de nueva evidencia objetiva.
 
 ---
 
