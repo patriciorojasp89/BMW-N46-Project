@@ -74,7 +74,76 @@ NEXT_ACTIONS.md
 
 ---
 
+# 📅 Entrada 002
+
+## Objetivo
+
+Evaluar el funcionamiento del sistema Valvetronic mediante Tool32 durante el arranque y posterior al intento de arranque.
+
+---
+
+## Acción realizada
+
+Se ejecutaron pruebas y lecturas relacionadas con el Valvetronic usando Tool32.
+
+Se observaron valores de posición objetivo y posición real del sistema Valvetronic durante el arranque y después del intento de arranque.
+
+También se ejecutó una rutina de aprendizaje/adaptación de topes del sistema Valvetronic.
+
+---
+
+## Mediciones observadas
+
+* Posición objetivo Valvetronic aproximada: 49.6°.
+* Posición real Valvetronic aproximada: 50.0°.
+* Diferencia aproximada entre objetivo y posición real: 0.39°.
+* Tensión observada en el sistema: aproximadamente 12.6 V.
+* El motor Valvetronic respondió a comandos directos del DME.
+* La rutina de aprendizaje/adaptación finalizó sin errores.
+* El sistema mostró conocimiento de topes mínimo y máximo.
+
+---
+
+## Limitación de la prueba
+
+No fue posible observar el comportamiento del Valvetronic en ralentí estable, ya que el motor continúa apagándose después de aproximadamente un segundo.
+
+---
+
+## Resultado
+
+La evidencia obtenida indica que el sistema Valvetronic responde, se posiciona de forma coherente y completa la adaptación sin errores bajo las condiciones de prueba disponibles.
+
+---
+
+## Conclusión
+
+La hipótesis de una falla principal en el motor Valvetronic, sensor excéntrico o aprendizaje de topes queda significativamente debilitada.
+
+El sistema Valvetronic no se considera actualmente la causa principal más probable del síntoma, aunque no queda descartado de forma absoluta debido a la ausencia de una prueba en ralentí estable.
+
+---
+
+## Impacto en el proyecto
+
+🟢 Reduce la probabilidad de falla principal en Valvetronic.
+
+🟢 Permite bajar la prioridad de esta línea de investigación.
+
+🟡 Mantiene pendiente la observación en ralentí estable si el motor logra permanecer funcionando en futuras pruebas.
+
+---
+
+## Archivos potencialmente relacionados
+
+STATUS.md
+
+HYPOTHESES.md
+
+NEXT_ACTIONS.md
+
+---
+
 # 📌 Próxima entrada
 
 Pendiente del siguiente avance técnico significativo del proyecto.
-
